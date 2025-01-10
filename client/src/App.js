@@ -7,7 +7,7 @@ import Post from "./pages/Post";
 import Registration from "./pages/Registration";
 import Login from "./pages/Login";
 import PageNotFound from "./pages/PageNotFound";
-
+import Profile from "./pages/Profile";
 
 import { AuthContext } from "./helpers/AuthContext";
 import "./App.css"; // Import CSS last for proper styling
@@ -73,6 +73,7 @@ function App() {
             <Route path="/post/:id" element={<Post />} />
             <Route path="/registration" element={<Registration />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/profile/:id" element={<Profile />} />
             <Route path="*" exact component={PageNotFound} />
           </Routes>
         </Router>
